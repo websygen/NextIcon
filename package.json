@@ -1,0 +1,21 @@
+{
+  "main": "index.html",
+  "name": "NextIcon",
+  "description": "Font to Image Convertor",
+  "version": "0.1.0",
+  "keywords": [ "demo", "node-webkit" ],
+  "window": {
+    "title": "NextIcon",
+    "icon": "NextIcon128.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 980,
+    "height": 720,
+	"min_width": 980,
+    "min_height": 720,
+    "position": "center"
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

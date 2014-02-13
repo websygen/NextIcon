@@ -1,0 +1,461 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NextIcon</title>
+
+<link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="styles/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="styles/default.css" rel="stylesheet" type="text/css">
+
+<script src="scripts/jq.core.js"></script>
+<script src="scripts/jq.bootstrap.js"></script>
+<script src="scripts/jq.typeahead.js"></script>
+<script src="scripts/jq.plugins.js"></script>
+<script src="scripts/jq.filesaver.js"></script>
+<script src="scripts/jq.globals.js"></script>
+   
+</head>
+
+<body>
+
+<header>
+
+<div id="header" class="row">
+<div class="col-xs-10">
+    <div id="ui-soft-control">
+    	<a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="styles/images/in-nexticon.png" alt="Next Icon" class="pull-left"></a>
+        <ul class="dropdown-menu" role="menu">
+            	<li><a id="menu-info"  data-toggle="modal" data-target="#modal-info" >Information</a></li>
+            	<li class="divider"></li>
+            	<li><a id="menu-close" href="#" onClick="return false;">Exit</a></li>
+            </ul>
+
+    </div>
+    
+</div>
+<div class="col-xs-2">
+    <div id="ui-window-control">
+        <a href="#" id="minimize" onClick="return false"><img src="styles/images/ui-minimize.png" alt="Minimize"></a><a href="#" id="maximize" onClick="return false"><img src="styles/images/ui-maximize.png" alt="Maximize"></a><a href="#" id="closer" onClick="return false"><img src="styles/images/ui-close.png" alt="Close"></a>
+    </div>
+</div>
+
+
+</div>
+<div id="subheader" class="row">
+<div class="col-xs-4 icon-panel">
+    <div class="row">
+    <div class="col-xs-4">Icons</div>
+    <div class="col-xs-8">
+        <div class="typeahead-wrapper">
+            <input id="icon-search" class="form-control input-sm" type="text" placeholder="search" autocomplete="off">
+        </div>
+    </div>
+    </div>
+</div>
+<div class="col-xs-8 preview-panel">Preview</div>
+</div>
+</header>
+<section>
+<div id="content" class="row">
+<div id="aside" class="col-xs-4">
+
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col1">
+          Web Application Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col1" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-adjust"></i> fa-adjust</a></li><li><a href="#" onClick="return false;"><i class="fa fa-anchor"></i> fa-anchor</a></li><li><a href="#" onClick="return false;"><i class="fa fa-archive"></i> fa-archive</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrows"></i> fa-arrows</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrows-h"></i> fa-arrows-h</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrows-v"></i> fa-arrows-v</a></li><li><a href="#" onClick="return false;"><i class="fa fa-asterisk"></i> fa-asterisk</a></li><li><a href="#" onClick="return false;"><i class="fa fa-ban"></i> fa-ban</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bar-chart-o"></i> fa-bar-chart-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-barcode"></i> fa-barcode</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bars"></i> fa-bars</a></li><li><a href="#" onClick="return false;"><i class="fa fa-beer"></i> fa-beer</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bell"></i> fa-bell</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bell-o"></i> fa-bell-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bolt"></i> fa-bolt</a></li><li><a href="#" onClick="return false;"><i class="fa fa-book"></i> fa-book</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bookmark"></i> fa-bookmark</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bookmark-o"></i> fa-bookmark-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-briefcase"></i> fa-briefcase</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bug"></i> fa-bug</a></li><li><a href="#" onClick="return false;"><i class="fa fa-building-o"></i> fa-building-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bullhorn"></i> fa-bullhorn</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bullseye"></i> fa-bullseye</a></li><li><a href="#" onClick="return false;"><i class="fa fa-calendar"></i> fa-calendar</a></li><li><a href="#" onClick="return false;"><i class="fa fa-calendar-o"></i> fa-calendar-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-camera"></i> fa-camera</a></li><li><a href="#" onClick="return false;"><i class="fa fa-camera-retro"></i> fa-camera-retro</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-certificate"></i> fa-certificate</a></li><li><a href="#" onClick="return false;"><i class="fa fa-check"></i> fa-check</a></li><li><a href="#" onClick="return false;"><i class="fa fa-check-circle"></i> fa-check-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-check-circle-o"></i> fa-check-circle-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-check-square"></i> fa-check-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-check-square-o"></i> fa-check-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-circle"></i> fa-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-circle-o"></i> fa-circle-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-clock-o"></i> fa-clock-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-cloud"></i> fa-cloud</a></li><li><a href="#" onClick="return false;"><i class="fa fa-cloud-download"></i> fa-cloud-download</a></li><li><a href="#" onClick="return false;"><i class="fa fa-cloud-upload"></i> fa-cloud-upload</a></li><li><a href="#" onClick="return false;"><i class="fa fa-code"></i> fa-code</a></li><li><a href="#" onClick="return false;"><i class="fa fa-code-fork"></i> fa-code-fork</a></li><li><a href="#" onClick="return false;"><i class="fa fa-coffee"></i> fa-coffee</a></li><li><a href="#" onClick="return false;"><i class="fa fa-cog"></i> fa-cog</a></li><li><a href="#" onClick="return false;"><i class="fa fa-cogs"></i> fa-cogs</a></li><li><a href="#" onClick="return false;"><i class="fa fa-comment"></i> fa-comment</a></li><li><a href="#" onClick="return false;"><i class="fa fa-comment-o"></i> fa-comment-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-comments"></i> fa-comments</a></li><li><a href="#" onClick="return false;"><i class="fa fa-comments-o"></i> fa-comments-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-compass"></i> fa-compass</a></li><li><a href="#" onClick="return false;"><i class="fa fa-credit-card"></i> fa-credit-card</a></li><li><a href="#" onClick="return false;"><i class="fa fa-crop"></i> fa-crop</a></li><li><a href="#" onClick="return false;"><i class="fa fa-crosshairs"></i> fa-crosshairs</a></li><li><a href="#" onClick="return false;"><i class="fa fa-cutlery"></i> fa-cutlery</a></li><li><a href="#" onClick="return false;"><i class="fa fa-dashboard "></i> fa-dashboard </a></li><li><a href="#" onClick="return false;"><i class="fa fa-desktop"></i> fa-desktop</a></li><li><a href="#" onClick="return false;"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-download"></i> fa-download</a></li><li><a href="#" onClick="return false;"><i class="fa fa-edit "></i> fa-edit </a></li><li><a href="#" onClick="return false;"><i class="fa fa-ellipsis-h"></i> fa-ellipsis-h</a></li><li><a href="#" onClick="return false;"><i class="fa fa-ellipsis-v"></i> fa-ellipsis-v</a></li><li><a href="#" onClick="return false;"><i class="fa fa-envelope"></i> fa-envelope</a></li><li><a href="#" onClick="return false;"><i class="fa fa-envelope-o"></i> fa-envelope-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-eraser"></i> fa-eraser</a></li><li><a href="#" onClick="return false;"><i class="fa fa-exchange"></i> fa-exchange</a></li><li><a href="#" onClick="return false;"><i class="fa fa-exclamation"></i> fa-exclamation</a></li><li><a href="#" onClick="return false;"><i class="fa fa-exclamation-circle"></i> fa-exclamation-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-exclamation-triangle"></i> fa-exclamation-triangle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-external-link"></i> fa-external-link</a></li><li><a href="#" onClick="return false;"><i class="fa fa-external-link-square"></i> fa-external-link-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-eye"></i> fa-eye</a></li><li><a href="#" onClick="return false;"><i class="fa fa-eye-slash"></i> fa-eye-slash</a></li><li><a href="#" onClick="return false;"><i class="fa fa-female"></i> fa-female</a></li><li><a href="#" onClick="return false;"><i class="fa fa-fighter-jet"></i> fa-fighter-jet</a></li><li><a href="#" onClick="return false;"><i class="fa fa-film"></i> fa-film</a></li><li><a href="#" onClick="return false;"><i class="fa fa-filter"></i> fa-filter</a></li><li><a href="#" onClick="return false;"><i class="fa fa-fire"></i> fa-fire</a></li><li><a href="#" onClick="return false;"><i class="fa fa-fire-extinguisher"></i> fa-fire-extinguisher</a></li><li><a href="#" onClick="return false;"><i class="fa fa-flag"></i> fa-flag</a></li><li><a href="#" onClick="return false;"><i class="fa fa-flag-checkered"></i> fa-flag-checkered</a></li><li><a href="#" onClick="return false;"><i class="fa fa-flag-o"></i> fa-flag-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-flash "></i> fa-flash </a></li><li><a href="#" onClick="return false;"><i class="fa fa-flask"></i> fa-flask</a></li><li><a href="#" onClick="return false;"><i class="fa fa-folder"></i> fa-folder</a></li><li><a href="#" onClick="return false;"><i class="fa fa-folder-o"></i> fa-folder-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-folder-open"></i> fa-folder-open</a></li><li><a href="#" onClick="return false;"><i class="fa fa-folder-open-o"></i> fa-folder-open-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-frown-o"></i> fa-frown-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-gamepad"></i> fa-gamepad</a></li><li><a href="#" onClick="return false;"><i class="fa fa-gavel"></i> fa-gavel</a></li><li><a href="#" onClick="return false;"><i class="fa fa-gear "></i> fa-gear </a></li><li><a href="#" onClick="return false;"><i class="fa fa-gears "></i> fa-gears </a></li><li><a href="#" onClick="return false;"><i class="fa fa-gift"></i> fa-gift</a></li><li><a href="#" onClick="return false;"><i class="fa fa-glass"></i> fa-glass</a></li><li><a href="#" onClick="return false;"><i class="fa fa-globe"></i> fa-globe</a></li><li><a href="#" onClick="return false;"><i class="fa fa-group "></i> fa-group </a></li><li><a href="#" onClick="return false;"><i class="fa fa-hdd-o"></i> fa-hdd-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-headphones"></i> fa-headphones</a></li><li><a href="#" onClick="return false;"><i class="fa fa-heart"></i> fa-heart</a></li><li><a href="#" onClick="return false;"><i class="fa fa-heart-o"></i> fa-heart-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-home"></i> fa-home</a></li><li><a href="#" onClick="return false;"><i class="fa fa-inbox"></i> fa-inbox</a></li><li><a href="#" onClick="return false;"><i class="fa fa-info"></i> fa-info</a></li><li><a href="#" onClick="return false;"><i class="fa fa-info-circle"></i> fa-info-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-key"></i> fa-key</a></li><li><a href="#" onClick="return false;"><i class="fa fa-keyboard-o"></i> fa-keyboard-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-laptop"></i> fa-laptop</a></li><li><a href="#" onClick="return false;"><i class="fa fa-leaf"></i> fa-leaf</a></li><li><a href="#" onClick="return false;"><i class="fa fa-legal "></i> fa-legal </a></li><li><a href="#" onClick="return false;"><i class="fa fa-lemon-o"></i> fa-lemon-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-level-down"></i> fa-level-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-level-up"></i> fa-level-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-lightbulb-o"></i> fa-lightbulb-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-location-arrow"></i> fa-location-arrow</a></li><li><a href="#" onClick="return false;"><i class="fa fa-lock"></i> fa-lock</a></li><li><a href="#" onClick="return false;"><i class="fa fa-magic"></i> fa-magic</a></li><li><a href="#" onClick="return false;"><i class="fa fa-magnet"></i> fa-magnet</a></li><li><a href="#" onClick="return false;"><i class="fa fa-mail-forward "></i> fa-mail-forward </a></li><li><a href="#" onClick="return false;"><i class="fa fa-mail-reply "></i> fa-mail-reply </a></li><li><a href="#" onClick="return false;"><i class="fa fa-mail-reply-all"></i> fa-mail-reply-all</a></li><li><a href="#" onClick="return false;"><i class="fa fa-male"></i> fa-male</a></li><li><a href="#" onClick="return false;"><i class="fa fa-map-marker"></i> fa-map-marker</a></li><li><a href="#" onClick="return false;"><i class="fa fa-meh-o"></i> fa-meh-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-microphone"></i> fa-microphone</a></li><li><a href="#" onClick="return false;"><i class="fa fa-microphone-slash"></i> fa-microphone-slash</a></li><li><a href="#" onClick="return false;"><i class="fa fa-minus"></i> fa-minus</a></li><li><a href="#" onClick="return false;"><i class="fa fa-minus-circle"></i> fa-minus-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-minus-square"></i> fa-minus-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-minus-square-o"></i> fa-minus-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-mobile"></i> fa-mobile</a></li><li><a href="#" onClick="return false;"><i class="fa fa-mobile-phone "></i> fa-mobile-phone </a></li><li><a href="#" onClick="return false;"><i class="fa fa-money"></i> fa-money</a></li><li><a href="#" onClick="return false;"><i class="fa fa-moon-o"></i> fa-moon-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-music"></i> fa-music</a></li><li><a href="#" onClick="return false;"><i class="fa fa-pencil"></i> fa-pencil</a></li><li><a href="#" onClick="return false;"><i class="fa fa-pencil-square"></i> fa-pencil-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-pencil-square-o"></i> fa-pencil-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-phone"></i> fa-phone</a></li><li><a href="#" onClick="return false;"><i class="fa fa-phone-square"></i> fa-phone-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-picture-o"></i> fa-picture-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plane"></i> fa-plane</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plus"></i> fa-plus</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plus-circle"></i> fa-plus-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plus-square"></i> fa-plus-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-power-off"></i> fa-power-off</a></li><li><a href="#" onClick="return false;"><i class="fa fa-print"></i> fa-print</a></li><li><a href="#" onClick="return false;"><i class="fa fa-puzzle-piece"></i> fa-puzzle-piece</a></li><li><a href="#" onClick="return false;"><i class="fa fa-qrcode"></i> fa-qrcode</a></li><li><a href="#" onClick="return false;"><i class="fa fa-question"></i> fa-question</a></li><li><a href="#" onClick="return false;"><i class="fa fa-question-circle"></i> fa-question-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-quote-left"></i> fa-quote-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-quote-right"></i> fa-quote-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-random"></i> fa-random</a></li><li><a href="#" onClick="return false;"><i class="fa fa-refresh"></i> fa-refresh</a></li><li><a href="#" onClick="return false;"><i class="fa fa-reply"></i> fa-reply</a></li><li><a href="#" onClick="return false;"><i class="fa fa-reply-all"></i> fa-reply-all</a></li><li><a href="#" onClick="return false;"><i class="fa fa-retweet"></i> fa-retweet</a></li><li><a href="#" onClick="return false;"><i class="fa fa-road"></i> fa-road</a></li><li><a href="#" onClick="return false;"><i class="fa fa-rocket"></i> fa-rocket</a></li><li><a href="#" onClick="return false;"><i class="fa fa-rss"></i> fa-rss</a></li><li><a href="#" onClick="return false;"><i class="fa fa-rss-square"></i> fa-rss-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-search"></i> fa-search</a></li><li><a href="#" onClick="return false;"><i class="fa fa-search-minus"></i> fa-search-minus</a></li><li><a href="#" onClick="return false;"><i class="fa fa-search-plus"></i> fa-search-plus</a></li><li><a href="#" onClick="return false;"><i class="fa fa-share"></i> fa-share</a></li><li><a href="#" onClick="return false;"><i class="fa fa-share-square"></i> fa-share-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-share-square-o"></i> fa-share-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-shield"></i> fa-shield</a></li><li><a href="#" onClick="return false;"><i class="fa fa-shopping-cart"></i> fa-shopping-cart</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sign-in"></i> fa-sign-in</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sign-out"></i> fa-sign-out</a></li><li><a href="#" onClick="return false;"><i class="fa fa-signal"></i> fa-signal</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sitemap"></i> fa-sitemap</a></li><li><a href="#" onClick="return false;"><i class="fa fa-smile-o"></i> fa-smile-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort"></i> fa-sort</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-alpha-asc"></i> fa-sort-alpha-asc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-alpha-desc"></i> fa-sort-alpha-desc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-amount-asc"></i> fa-sort-amount-asc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-amount-desc"></i> fa-sort-amount-desc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-asc"></i> fa-sort-asc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-desc"></i> fa-sort-desc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-down "></i> fa-sort-down </a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-numeric-asc"></i> fa-sort-numeric-asc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-numeric-desc"></i> fa-sort-numeric-desc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sort-up "></i> fa-sort-up </a></li><li><a href="#" onClick="return false;"><i class="fa fa-spinner"></i> fa-spinner</a></li><li><a href="#" onClick="return false;"><i class="fa fa-square"></i> fa-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-square-o"></i> fa-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-star"></i> fa-star</a></li><li><a href="#" onClick="return false;"><i class="fa fa-star-half"></i> fa-star-half</a></li><li><a href="#" onClick="return false;"><i class="fa fa-star-half-empty "></i> fa-star-half-empty </a></li><li><a href="#" onClick="return false;"><i class="fa fa-star-half-full "></i> fa-star-half-full </a></li><li><a href="#" onClick="return false;"><i class="fa fa-star-half-o"></i> fa-star-half-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-star-o"></i> fa-star-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-subscript"></i> fa-subscript</a></li><li><a href="#" onClick="return false;"><i class="fa fa-suitcase"></i> fa-suitcase</a></li><li><a href="#" onClick="return false;"><i class="fa fa-sun-o"></i> fa-sun-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-superscript"></i> fa-superscript</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tablet"></i> fa-tablet</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tachometer"></i> fa-tachometer</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tag"></i> fa-tag</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tags"></i> fa-tags</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tasks"></i> fa-tasks</a></li><li><a href="#" onClick="return false;"><i class="fa fa-terminal"></i> fa-terminal</a></li><li><a href="#" onClick="return false;"><i class="fa fa-thumb-tack"></i> fa-thumb-tack</a></li><li><a href="#" onClick="return false;"><i class="fa fa-thumbs-down"></i> fa-thumbs-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-thumbs-o-down"></i> fa-thumbs-o-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-thumbs-o-up"></i> fa-thumbs-o-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-thumbs-up"></i> fa-thumbs-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-ticket"></i> fa-ticket</a></li><li><a href="#" onClick="return false;"><i class="fa fa-times"></i> fa-times</a></li><li><a href="#" onClick="return false;"><i class="fa fa-times-circle"></i> fa-times-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-times-circle-o"></i> fa-times-circle-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tint"></i> fa-tint</a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-down "></i> fa-toggle-down </a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-left "></i> fa-toggle-left </a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-right "></i> fa-toggle-right </a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-up "></i> fa-toggle-up </a></li><li><a href="#" onClick="return false;"><i class="fa fa-trash-o"></i> fa-trash-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-trophy"></i> fa-trophy</a></li><li><a href="#" onClick="return false;"><i class="fa fa-truck"></i> fa-truck</a></li><li><a href="#" onClick="return false;"><i class="fa fa-umbrella"></i> fa-umbrella</a></li><li><a href="#" onClick="return false;"><i class="fa fa-unlock"></i> fa-unlock</a></li><li><a href="#" onClick="return false;"><i class="fa fa-unlock-alt"></i> fa-unlock-alt</a></li><li><a href="#" onClick="return false;"><i class="fa fa-unsorted "></i> fa-unsorted </a></li><li><a href="#" onClick="return false;"><i class="fa fa-upload"></i> fa-upload</a></li><li><a href="#" onClick="return false;"><i class="fa fa-user"></i> fa-user</a></li><li><a href="#" onClick="return false;"><i class="fa fa-users"></i> fa-users</a></li><li><a href="#" onClick="return false;"><i class="fa fa-video-camera"></i> fa-video-camera</a></li><li><a href="#" onClick="return false;"><i class="fa fa-volume-down"></i> fa-volume-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-volume-off"></i> fa-volume-off</a></li><li><a href="#" onClick="return false;"><i class="fa fa-volume-up"></i> fa-volume-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-warning "></i> fa-warning </a></li><li><a href="#" onClick="return false;"><i class="fa fa-wheelchair"></i> fa-wheelchair</a></li><li><a href="#" onClick="return false;"><i class="fa fa-wrench"></i> fa-wrench</a></li><li><a href="#" onClick="return false;"><i class="fa "></i> </a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col2">
+          Form Control Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col2" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-check-square"></i> fa-check-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-check-square-o"></i> fa-check-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-circle"></i> fa-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-circle-o"></i> fa-circle-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-dot-circle-o"></i> fa-dot-circle-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-minus-square"></i> fa-minus-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-minus-square-o"></i> fa-minus-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plus-square"></i> fa-plus-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plus-square-o"></i> fa-plus-square-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-square"></i> fa-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-square-o"></i> fa-square-o</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col3">
+          Currency Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col3" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-btc"></i> fa-btc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-eur"></i> fa-eur</a></li><li><a href="#" onClick="return false;"><i class="fa fa-gbp"></i> fa-gbp</a></li><li><a href="#" onClick="return false;"><i class="fa fa-inr"></i> fa-inr</a></li><li><a href="#" onClick="return false;"><i class="fa fa-jpy"></i> fa-jpy</a></li><li><a href="#" onClick="return false;"><i class="fa fa-krw"></i> fa-krw</a></li><li><a href="#" onClick="return false;"><i class="fa fa-money"></i> fa-money</a></li><li><a href="#" onClick="return false;"><i class="fa fa-rub"></i> fa-rub</a></li><li><a href="#" onClick="return false;"><i class="fa fa-try"></i> fa-try</a></li><li><a href="#" onClick="return false;"><i class="fa fa-usd"></i> fa-usd</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col4">
+          Text Editor Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col4" class="panel-collapse collapse">
+      <div class="panel-body">
+       <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-align-center"></i> fa-align-center</a></li><li><a href="#" onClick="return false;"><i class="fa fa-align-justify"></i> fa-align-justify</a></li><li><a href="#" onClick="return false;"><i class="fa fa-align-left"></i> fa-align-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-align-right"></i> fa-align-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bold"></i> fa-bold</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chain "></i> fa-chain </a></li><li><a href="#" onClick="return false;"><i class="fa fa-chain-broken"></i> fa-chain-broken</a></li><li><a href="#" onClick="return false;"><i class="fa fa-clipboard"></i> fa-clipboard</a></li><li><a href="#" onClick="return false;"><i class="fa fa-columns"></i> fa-columns</a></li><li><a href="#" onClick="return false;"><i class="fa fa-copy "></i> fa-copy </a></li><li><a href="#" onClick="return false;"><i class="fa fa-cut "></i> fa-cut </a></li><li><a href="#" onClick="return false;"><i class="fa fa-dedent "></i> fa-dedent </a></li><li><a href="#" onClick="return false;"><i class="fa fa-eraser"></i> fa-eraser</a></li><li><a href="#" onClick="return false;"><i class="fa fa-file"></i> fa-file</a></li><li><a href="#" onClick="return false;"><i class="fa fa-file-o"></i> fa-file-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-file-text"></i> fa-file-text</a></li><li><a href="#" onClick="return false;"><i class="fa fa-file-text-o"></i> fa-file-text-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-files-o"></i> fa-files-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-floppy-o"></i> fa-floppy-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-font"></i> fa-font</a></li><li><a href="#" onClick="return false;"><i class="fa fa-indent"></i> fa-indent</a></li><li><a href="#" onClick="return false;"><i class="fa fa-italic"></i> fa-italic</a></li><li><a href="#" onClick="return false;"><i class="fa fa-link"></i> fa-link</a></li><li><a href="#" onClick="return false;"><i class="fa fa-list"></i> fa-list</a></li><li><a href="#" onClick="return false;"><i class="fa fa-list-alt"></i> fa-list-alt</a></li><li><a href="#" onClick="return false;"><i class="fa fa-list-ol"></i> fa-list-ol</a></li><li><a href="#" onClick="return false;"><i class="fa fa-list-ul"></i> fa-list-ul</a></li><li><a href="#" onClick="return false;"><i class="fa fa-outdent"></i> fa-outdent</a></li><li><a href="#" onClick="return false;"><i class="fa fa-paperclip"></i> fa-paperclip</a></li><li><a href="#" onClick="return false;"><i class="fa fa-paste "></i> fa-paste </a></li><li><a href="#" onClick="return false;"><i class="fa fa-repeat"></i> fa-repeat</a></li><li><a href="#" onClick="return false;"><i class="fa fa-rotate-left "></i> fa-rotate-left </a></li><li><a href="#" onClick="return false;"><i class="fa fa-rotate-right "></i> fa-rotate-right </a></li><li><a href="#" onClick="return false;"><i class="fa fa-save "></i> fa-save </a></li><li><a href="#" onClick="return false;"><i class="fa fa-scissors"></i> fa-scissors</a></li><li><a href="#" onClick="return false;"><i class="fa fa-strikethrough"></i> fa-strikethrough</a></li><li><a href="#" onClick="return false;"><i class="fa fa-table"></i> fa-table</a></li><li><a href="#" onClick="return false;"><i class="fa fa-text-height"></i> fa-text-height</a></li><li><a href="#" onClick="return false;"><i class="fa fa-text-width"></i> fa-text-width</a></li><li><a href="#" onClick="return false;"><i class="fa fa-th"></i> fa-th</a></li><li><a href="#" onClick="return false;"><i class="fa fa-th-large"></i> fa-th-large</a></li><li><a href="#" onClick="return false;"><i class="fa fa-th-list"></i> fa-th-list</a></li><li><a href="#" onClick="return false;"><i class="fa fa-underline"></i> fa-underline</a></li><li><a href="#" onClick="return false;"><i class="fa fa-undo"></i> fa-undo</a></li><li><a href="#" onClick="return false;"><i class="fa fa-unlink "></i> fa-unlink </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col5">
+          Directional Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col5" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-angle-double-down"></i> fa-angle-double-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-angle-double-left"></i> fa-angle-double-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-angle-double-right"></i> fa-angle-double-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-angle-double-up"></i> fa-angle-double-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-angle-down"></i> fa-angle-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-angle-left"></i> fa-angle-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-angle-right"></i> fa-angle-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-angle-up"></i> fa-angle-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-down"></i> fa-arrow-circle-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-left"></i> fa-arrow-circle-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-o-down"></i> fa-arrow-circle-o-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-o-left"></i> fa-arrow-circle-o-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-o-right"></i> fa-arrow-circle-o-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-o-up"></i> fa-arrow-circle-o-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-right"></i> fa-arrow-circle-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-circle-up"></i> fa-arrow-circle-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-down"></i> fa-arrow-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-left"></i> fa-arrow-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-right"></i> fa-arrow-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrow-up"></i> fa-arrow-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrows"></i> fa-arrows</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrows-alt"></i> fa-arrows-alt</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrows-h"></i> fa-arrows-h</a></li><li><a href="#" onClick="return false;"><i class="fa fa-arrows-v"></i> fa-arrows-v</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-down"></i> fa-caret-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-left"></i> fa-caret-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-right"></i> fa-caret-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-down"></i> fa-caret-square-o-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-left"></i> fa-caret-square-o-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-right"></i> fa-caret-square-o-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-square-o-up"></i> fa-caret-square-o-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-caret-up"></i> fa-caret-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-circle-down"></i> fa-chevron-circle-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-circle-left"></i> fa-chevron-circle-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-circle-right"></i> fa-chevron-circle-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-circle-up"></i> fa-chevron-circle-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-down"></i> fa-chevron-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-left"></i> fa-chevron-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-right"></i> fa-chevron-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-chevron-up"></i> fa-chevron-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-hand-o-down"></i> fa-hand-o-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-hand-o-left"></i> fa-hand-o-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-hand-o-right"></i> fa-hand-o-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-hand-o-up"></i> fa-hand-o-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-long-arrow-down"></i> fa-long-arrow-down</a></li><li><a href="#" onClick="return false;"><i class="fa fa-long-arrow-left"></i> fa-long-arrow-left</a></li><li><a href="#" onClick="return false;"><i class="fa fa-long-arrow-right"></i> fa-long-arrow-right</a></li><li><a href="#" onClick="return false;"><i class="fa fa-long-arrow-up"></i> fa-long-arrow-up</a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-down "></i> fa-toggle-down </a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-left "></i> fa-toggle-left </a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-right "></i> fa-toggle-right </a></li><li><a href="#" onClick="return false;"><i class="fa fa-toggle-up "></i> fa-toggle-up </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col6">
+          Video Player Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col6" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-arrows-alt"></i> fa-arrows-alt</a></li><li><a href="#" onClick="return false;"><i class="fa fa-backward"></i> fa-backward</a></li><li><a href="#" onClick="return false;"><i class="fa fa-compress"></i> fa-compress</a></li><li><a href="#" onClick="return false;"><i class="fa fa-eject"></i> fa-eject</a></li><li><a href="#" onClick="return false;"><i class="fa fa-expand"></i> fa-expand</a></li><li><a href="#" onClick="return false;"><i class="fa fa-fast-backward"></i> fa-fast-backward</a></li><li><a href="#" onClick="return false;"><i class="fa fa-fast-forward"></i> fa-fast-forward</a></li><li><a href="#" onClick="return false;"><i class="fa fa-forward"></i> fa-forward</a></li><li><a href="#" onClick="return false;"><i class="fa fa-pause"></i> fa-pause</a></li><li><a href="#" onClick="return false;"><i class="fa fa-play"></i> fa-play</a></li><li><a href="#" onClick="return false;"><i class="fa fa-play-circle"></i> fa-play-circle</a></li><li><a href="#" onClick="return false;"><i class="fa fa-play-circle-o"></i> fa-play-circle-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-step-backward"></i> fa-step-backward</a></li><li><a href="#" onClick="return false;"><i class="fa fa-step-forward"></i> fa-step-forward</a></li><li><a href="#" onClick="return false;"><i class="fa fa-stop"></i> fa-stop</a></li><li><a href="#" onClick="return false;"><i class="fa fa-youtube-play"></i> fa-youtube-play</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col7">
+          Brand Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col7" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-adn"></i> fa-adn</a></li><li><a href="#" onClick="return false;"><i class="fa fa-android"></i> fa-android</a></li><li><a href="#" onClick="return false;"><i class="fa fa-apple"></i> fa-apple</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bitbucket"></i> fa-bitbucket</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bitbucket-square"></i> fa-bitbucket-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-bitcoin "></i> fa-bitcoin </a></li><li><a href="#" onClick="return false;"><i class="fa fa-btc"></i> fa-btc</a></li><li><a href="#" onClick="return false;"><i class="fa fa-css3"></i> fa-css3</a></li><li><a href="#" onClick="return false;"><i class="fa fa-dribbble"></i> fa-dribbble</a></li><li><a href="#" onClick="return false;"><i class="fa fa-dropbox"></i> fa-dropbox</a></li><li><a href="#" onClick="return false;"><i class="fa fa-facebook"></i> fa-facebook</a></li><li><a href="#" onClick="return false;"><i class="fa fa-facebook-square"></i> fa-facebook-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-flickr"></i> fa-flickr</a></li><li><a href="#" onClick="return false;"><i class="fa fa-foursquare"></i> fa-foursquare</a></li><li><a href="#" onClick="return false;"><i class="fa fa-github"></i> fa-github</a></li><li><a href="#" onClick="return false;"><i class="fa fa-github-alt"></i> fa-github-alt</a></li><li><a href="#" onClick="return false;"><i class="fa fa-github-square"></i> fa-github-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-gittip"></i> fa-gittip</a></li><li><a href="#" onClick="return false;"><i class="fa fa-google-plus"></i> fa-google-plus</a></li><li><a href="#" onClick="return false;"><i class="fa fa-google-plus-square"></i> fa-google-plus-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-html5"></i> fa-html5</a></li><li><a href="#" onClick="return false;"><i class="fa fa-instagram"></i> fa-instagram</a></li><li><a href="#" onClick="return false;"><i class="fa fa-linkedin"></i> fa-linkedin</a></li><li><a href="#" onClick="return false;"><i class="fa fa-linkedin-square"></i> fa-linkedin-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-linux"></i> fa-linux</a></li><li><a href="#" onClick="return false;"><i class="fa fa-maxcdn"></i> fa-maxcdn</a></li><li><a href="#" onClick="return false;"><i class="fa fa-pagelines"></i> fa-pagelines</a></li><li><a href="#" onClick="return false;"><i class="fa fa-pinterest"></i> fa-pinterest</a></li><li><a href="#" onClick="return false;"><i class="fa fa-pinterest-square"></i> fa-pinterest-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-renren"></i> fa-renren</a></li><li><a href="#" onClick="return false;"><i class="fa fa-skype"></i> fa-skype</a></li><li><a href="#" onClick="return false;"><i class="fa fa-stack-exchange"></i> fa-stack-exchange</a></li><li><a href="#" onClick="return false;"><i class="fa fa-stack-overflow"></i> fa-stack-overflow</a></li><li><a href="#" onClick="return false;"><i class="fa fa-trello"></i> fa-trello</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tumblr"></i> fa-tumblr</a></li><li><a href="#" onClick="return false;"><i class="fa fa-tumblr-square"></i> fa-tumblr-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-twitter"></i> fa-twitter</a></li><li><a href="#" onClick="return false;"><i class="fa fa-twitter-square"></i> fa-twitter-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-vimeo-square"></i> fa-vimeo-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-vk"></i> fa-vk</a></li><li><a href="#" onClick="return false;"><i class="fa fa-weibo"></i> fa-weibo</a></li><li><a href="#" onClick="return false;"><i class="fa fa-windows"></i> fa-windows</a></li><li><a href="#" onClick="return false;"><i class="fa fa-xing"></i> fa-xing</a></li><li><a href="#" onClick="return false;"><i class="fa fa-xing-square"></i> fa-xing-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-youtube"></i> fa-youtube</a></li><li><a href="#" onClick="return false;"><i class="fa fa-youtube-play"></i> fa-youtube-play</a></li><li><a href="#" onClick="return false;"><i class="fa fa-youtube-square"></i> fa-youtube-square</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col8">
+          Medical Icons
+        </a>
+      </h4>
+    </div>
+    <div id="Col8" class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+        <li><a href="#" onClick="return false;"><i class="fa fa-ambulance"></i> fa-ambulance</a></li><li><a href="#" onClick="return false;"><i class="fa fa-h-square"></i> fa-h-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-hospital-o"></i> fa-hospital-o</a></li><li><a href="#" onClick="return false;"><i class="fa fa-medkit"></i> fa-medkit</a></li><li><a href="#" onClick="return false;"><i class="fa fa-plus-square"></i> fa-plus-square</a></li><li><a href="#" onClick="return false;"><i class="fa fa-stethoscope"></i> fa-stethoscope</a></li><li><a href="#" onClick="return false;"><i class="fa fa-user-md"></i> fa-user-md</a></li><li><a href="#" onClick="return false;"><i class="fa fa-wheelchair"></i> fa-wheelchair</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#Col9">
+          Typo
+        </a>
+      </h4>
+    </div>
+    <div id="Col9" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+<div id="section" class="col-xs-8">
+<div id="icon-holder">
+<div id="icon-canvas">
+<i class="fa fa-adjust"></i>
+</div>
+</div>
+
+<div id="save" class="row">
+<div class="input-group">
+	<input id="filename" type="text" class="form-control" value="image">
+	<span class="input-group-btn">
+		<button class="btn btn-default" type="button" id="save-icon"><i class="fa fa-floppy-o"></i> Save</button>
+	</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<footer>
+<div id="footer" class="row">
+<div class="col-xs-8">
+<h3>Shape options</h3>
+<div class="row footer-legend">
+    <div class="col-xs-6">Shape size:</div>
+    <div class="col-xs-6">Shape color:</div>
+</div>
+<div class="row footer-content">
+    <div class="col-xs-6">
+    
+    
+    <div class="input-group">
+		<span class="input-group-addon">
+        <input id="sl-shape-size" type="text" class="col-xs-12 hidden" value="" data-slider-min="16" data-slider-max="512" data-slider-step="1" data-slider-value="256" data-slider-orientation="horizontal" data-slider-selection="none" data-slider-tooltip="show"> 
+        </span>
+		<input id="sl-shape-size-val" class="form-control col-xs-12" type="text" placeholder="256">
+	</div>
+    
+    
+    
+    
+    </div>
+    <div class="col-xs-6">
+
+    
+    <div class="input-group">
+		<input id="cp-shape-color" class="bscp form-control col-xs-12" type="text" data-color-format="rgba" value="rgba(255,255,255,1)" placeholder="rgba(255,255,255,1)">
+
+        
+		<div class="input-group-addon pattern-holder" style="border-color:rgba(255,255,255,0);">
+			<div id="cp-shape-color-preview" class="pattern"></div>
+        </div>
+	</div>
+    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="col-xs-4">
+<h3>Background options</h3>
+
+<div class="row footer-legend">
+    <div class="col-xs-12">Choose background image:</div>
+</div>
+<div class="row footer-content">
+    <div class="col-xs-12">
+    <div class="btn-group btn-block dropup">
+      <button type="button" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown">
+       Background: <span id="bg-option">None</span>
+      </button>
+      <ul id="background-menu" class="dropdown-menu scrollable-menu" role="menu">
+        <li><a href="#" data-type="none">None</a></li>
+        <li class="divider"></li>
+		<!--<li class="dropdown-header">Pattern backgrounds</li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="pat-dark-chess" data-type="pattern">Chess Dark</a></li>
+        <li class="divider"></li>-->
+		<li class="dropdown-header">Image backgrounds</li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-blue-01" data-type="image">Ambient Blue 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-blue-02" data-type="image">Ambient Blue 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-blue-03" data-type="image">Ambient Blue 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-blue-04" data-type="image">Ambient Blue 04</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-dark-01" data-type="image">Ambient Dark 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-dark-02" data-type="image">Ambient Dark 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-dark-03" data-type="image">Ambient Dark 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-dark-04" data-type="image">Ambient Dark 04</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-dark-05" data-type="image">Ambient Dark 05</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-gold-01" data-type="image">Ambient Gold 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-gold-02" data-type="image">Ambient Gold 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-gold-03" data-type="image">Ambient Gold 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-gold-04" data-type="image">Ambient Gold 04</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-green-01" data-type="image">Ambient Green 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-green-02" data-type="image">Ambient Green 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-navy-01" data-type="image">Ambient Navy 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-navy-02" data-type="image">Ambient Navy 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-purple-01" data-type="image">Ambient Purple 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-purple-02" data-type="image">Ambient Purple 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-purple-03" data-type="image">Ambient Purple 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-purple-04" data-type="image">Ambient Purple 04</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-red-01" data-type="image">Ambient Red 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-red-02" data-type="image">Ambient Red 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-red-03" data-type="image">Ambient Red 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-red-04" data-type="image">Ambient Red 04</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-rose-01" data-type="image">Ambient Rose 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-rose-02" data-type="image">Ambient Rose 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-rose-03" data-type="image">Ambient Rose 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-rose-04" data-type="image">Ambient Rose 04</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-rose-05" data-type="image">Ambient Rose 05</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="am-rose-06" data-type="image">Ambient Rose 06</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-green-01" data-type="image">Gradient Green 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-rose-01" data-type="image">Gradient Rose 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-rose-02" data-type="image">Gradient Rose 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-rose-03" data-type="image">Gradient Rose 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-sepia-01" data-type="image">Gradient Sepia 01</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-sepia-02" data-type="image">Gradient Sepia 02</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-sepia-03" data-type="image">Gradient Sepia 03</a></li>
+        <li><a class="tt" href="#" data-toggle="tooltip" data-placement="top" data-src="grad-sepia-04" data-type="image">Gradient Sepia 04</a></li>
+      </ul>
+    </div>
+
+
+
+    </div>
+    
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="col-xs-12">
+<h3>Icon options</h3>
+<div class="row footer-legend">
+    <div class="col-xs-4">Icon size:</div>
+    <div class="col-xs-4">Icon color:</div>
+    <div class="col-xs-4">Icon rotate:</div>
+</div>
+<div class="row footer-content">
+    <div class="col-xs-4">
+    <div class="input-group">
+		<span class="input-group-addon">
+        <input id="sl-icon-size" type="text" class="col-xs-12 hidden" value="" data-slider-min="10" data-slider-max="512" data-slider-step="1" data-slider-value="200" data-slider-orientation="horizontal" data-slider-selection="none" data-slider-tooltip="show"> 
+        </span>
+		<input type="text" class="form-control col-xs-12" id="sl-icon-size-val" placeholder="256">
+	</div>
+    
+    </div>
+    <div class="col-xs-4">
+    <!--<input id="cp-icon-color" class="bscp form-control col-xs-12" type="text" data-color-format="rgba" value="rgba(0,0,0,1)" placeholder="rgba(0,0,0,1)" >-->
+    
+    <div class="input-group">
+		<input id="cp-icon-color" class="bscp form-control col-xs-12" type="text" data-color-format="rgba" value="rgba(0,0,0,1)" placeholder="rgba(0,0,0,1)" >
+
+        
+		<div class="input-group-addon pattern-holder" style="border-color:rgba(0,0,0,1);">
+			<div id="cp-icon-color-preview" class="pattern"></div>
+        </div>
+	</div>
+    
+    </div>
+    <div class="col-xs-4">
+    <div class="input-group">
+		<span class="input-group-addon">
+        <input id="sl-icon-rotate" type="text" class="col-xs-12 hidden" value="0" data-slider-min="0" data-slider-max="270" data-slider-step="90" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="none" data-slider-tooltip="show">  
+        </span>
+		<input type="text" class="form-control col-xs-12" id="sl-icon-rotate-val"  value="0°" readonly>
+	</div>
+    
+    
+    <!--<input id="sl-icon-rotate" type="text" class="span5 hidden" value="0" data-slider-min="0" data-slider-max="270" data-slider-step="90" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="none" data-slider-tooltip="show"> -->
+    </div>
+</div>
+</div>
+
+
+
+</div>
+
+</footer>
+
+<div class="modal fade bs-modal-lg" id="modal-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+        <div class="modal-title" id="myModalLabel">
+          <img src="assets/NextIcon16.png" class="pull-left"> <span class="text-primary">&nbsp;&nbsp;NextIcon <small>v.1.0</small></span>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="modal-body text-muted" style="height:320px; overflow-y:scroll;">
+        <h4>General</h4>
+        <p>NextIcon is free and open icon creation software powered with amazing Font-Awesome font and created by Deniz Fuchidzhiev (websygen.com).</p>
+        
+        <h4>License</h4>
+        <p><strong>NextIcon is licensed under MIT license</strong>:</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+		<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+		<p><strong>Font Awesome licensed under SIL OFL 1.1</strong>:</p>
+        <p>The rest of the software used in the NextIcon is licensed under: MIT or Apache (for more information see Credits.)</p>
+        <ul>
+          <li>MIT License (opensource.org/licenses/MIT)</li>
+          <li>SIL OFL 1.1 (scripts.sil.org/cms/scripts/page.php?id=OFL)</li>
+          <li>Apache license (www.apache.org/licenses/LICENSE-2.0)</li>
+        </ul>
+        <h4>Credits</h4>
+        <p><strong>NextIcon</strong> by Deniz Fuchidzhiev (websygen.com) MIT</p>
+        <p><strong>Font Awesome</strong> by Dave Gandy (twitter.com/davegandy) SIL OFL 1.1</p>
+        <p><strong>Twitter Bootstrap</strong> by mdo &amp; fat (twitter.com/mdo &amp; twitter.com/fat) Apache 2.0</p>
+        <p><strong>jQuery</strong> by The jQuery Foundation (jquery.org/team/) MIT</p>
+        <p><strong>jQuery Nicescroll</strong> by InuYaksa (areaaperta.com/nicescroll) MIT</p>
+        <p><strong>Bootstrap Slider</strong> by Stefan Petre (www.eyecon.ro/bootstrap-slider) Apache 2.0</p>
+        <p><strong>Bootstrap Colorpicker</strong> by Stefan Petre (mjaalnir.github.io/bootstrap-colorpicker) Apache 2.0</p>
+        <p><strong>html2canvas</strong> by Niklas von Hertzen (html2canvas.hertzen.com) MIT</p>
+        <p><strong>canvas.toBlob</strong> by Eli Grey &amp; Devin Samarin (eligrey.com &amp; github.com/eboyjr) X11/MIT</p>
+        <p><strong>node-webkit</strong> by Roger Wang (github.com/rogerwang/node-webkit) MIT</p>
+        <p><strong>nodebob</strong> by geo8bit (github.com/geo8bit/nodebob) MIT</p>
+      </div>
+      <div class="modal-footer" style="margin-top:0px;">
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
